@@ -1,0 +1,6 @@
+framework module Pods_Ex_Ordinario_DCPTests {
+  umbrella header "Pods-Ex_Ordinario_DCPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

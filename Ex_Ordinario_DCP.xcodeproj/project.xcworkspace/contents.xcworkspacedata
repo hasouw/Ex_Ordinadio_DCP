@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Ex_Ordinario_DCP.xcodeproj">
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/DataHolder.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../DataHolder.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/DataHolder.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

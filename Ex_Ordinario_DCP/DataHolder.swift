@@ -6,7 +6,12 @@
 //
 
 import UIKit
+import Firebase
 
 class DataHolder: NSObject {
+    
+    func initFireBase(){
+        FIRApp.configure()
+    }
 
 }
