@@ -26,8 +26,6 @@ class VCTab: UIViewController, MKMapViewDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     func centralizarEnPosicion(coordenada:CLLocationCoordinate2D)  {
         let region:MKCoordinateRegion=MKCoordinateRegion( center:coordenada,span:MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
         MiMapa?.setRegion(region, animated: true)
