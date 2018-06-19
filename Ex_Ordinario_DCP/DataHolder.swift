@@ -18,6 +18,8 @@ class DataHolder: NSObject {
         locationAdmin=LocationAdmin()
     }
     
+    algunos cambios
+    
     func initFireBase(){
         FIRApp.configure()
     }
