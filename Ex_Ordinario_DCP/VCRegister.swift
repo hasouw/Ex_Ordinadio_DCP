@@ -26,9 +26,12 @@ class VCRegister: UIViewController {
     
     @IBAction func accionBotonRegistrar(){
         Auth.auth().createUser(withEmail: (txtEmail?.text)!, password: (txtPass?.text)!) { (user, error) in
-            // ...
-        }
-        self.performSegue(withIdentifier: "trregistro", sender: self)
+            if (error==nil){
+                self.performSegue(withIdentifier: "trregistro", sender: self)
+            }else{
+                print("Error en registro: ", error!)
+            }        }
+        
     }
         
        

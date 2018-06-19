@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LogIn"/>
                                 <connections>
-                                    <segue destination="VdI-fC-l8q" kind="show" id="5sb-i8-Ddt"/>
+                                    <segue destination="VdI-fC-l8q" kind="show" identifier="tran1" id="5sb-i8-Ddt"/>
                                 </connections>
                             </button>
                         </subviews>
