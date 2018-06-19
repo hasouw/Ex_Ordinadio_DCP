@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="118" y="1133"/>
         </scene>
-        <!--Tabla-->
+        <!--View Controller-->
         <scene sceneID="KCD-JP-h0j">
             <objects>
-                <viewController id="7ie-wt-ZJc" customClass="VCTabla" sceneMemberID="viewController">
+                <viewController id="7ie-wt-ZJc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yol-n8-vSk" customClass="VCTabla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
