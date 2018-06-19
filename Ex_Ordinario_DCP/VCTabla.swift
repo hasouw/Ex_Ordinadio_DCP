@@ -9,13 +9,14 @@
 import UIKit
 import MapKit
 
-class VCTab: UIViewController, LocationAdminDelegate {
+class VCTab: UIViewController, MKMapViewDelegate{
     
     @IBOutlet var MiMapa:MKMapView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        MiMapa?.showsUserLocation = true
+        MiMapa?.delegate = self
         DataHolder.sharedInstance.locationAdmin?.delegate=self
         // Do any additional setup after loading the view.
     }
@@ -25,13 +26,14 @@ class VCTab: UIViewController, LocationAdminDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func localizacionActualizada(coordenada: CLLocationCoordinate2D) {
-        centralizarEnPosicion(coordenada: coordenada)
-    }
+    
     
     func centralizarEnPosicion(coordenada:CLLocationCoordinate2D)  {
         let region:MKCoordinateRegion=MKCoordinateRegion( center:coordenada,span:MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         MiMapa?.setRegion(region, animated: true)
+    }
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        centralizarEnPosicion(coordenada: userLocation.coordinate)
     }
 
     /*
