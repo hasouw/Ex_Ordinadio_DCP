@@ -16,7 +16,7 @@ class VCTab: UIViewController, MKMapViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         MiMapa?.showsUserLocation = true
-        MiMapa?.delegate = self
+        //MiMapa?.delegate = self
         DataHolder.sharedInstance.locationAdmin?.delegate=self
         // Do any additional setup after loading the view.
     }
@@ -29,7 +29,7 @@ class VCTab: UIViewController, MKMapViewDelegate{
     
     
     func centralizarEnPosicion(coordenada:CLLocationCoordinate2D)  {
-        let region:MKCoordinateRegion=MKCoordinateRegion( center:coordenada,span:MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region:MKCoordinateRegion=MKCoordinateRegion( center:coordenada,span:MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
         MiMapa?.setRegion(region, animated: true)
     }
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
