@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/VCRegister.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/DataHolder.swift">
    </FileRef>
    <FileRef

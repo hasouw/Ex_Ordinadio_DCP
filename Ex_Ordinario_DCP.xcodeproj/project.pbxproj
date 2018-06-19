@@ -17,6 +17,7 @@
 		95887BEE20D8FD0400381E6B /* Ex_Ordinario_DCPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887BED20D8FD0400381E6B /* Ex_Ordinario_DCPTests.swift */; };
 		95887BF920D8FD0400381E6B /* Ex_Ordinario_DCPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887BF820D8FD0400381E6B /* Ex_Ordinario_DCPUITests.swift */; };
 		95887C1120D907F900381E6B /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1020D907F900381E6B /* DataHolder.swift */; };
+		95887C1320D90F3100381E6B /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1220D90F3100381E6B /* VCRegister.swift */; };
 		FD86BBF55227173E2F526C9C /* Pods_Ex_Ordinario_DCPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08BC9DEFF7D41371EF7591 /* Pods_Ex_Ordinario_DCPTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		95887BFA20D8FD0400381E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95887C0920D9053200381E6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		95887C1020D907F900381E6B /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataHolder.swift; path = /Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/DataHolder.swift; sourceTree = "<absolute>"; };
+		95887C1220D90F3100381E6B /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VCRegister.swift; path = /Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/VCRegister.swift; sourceTree = "<absolute>"; };
 		9A6AF9A61305F8118771B76D /* Pods-Ex_Ordinario_DCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ex_Ordinario_DCP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ex_Ordinario_DCP/Pods-Ex_Ordinario_DCP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				95887BD820D8FCFD00381E6B /* AppDelegate.swift */,
 				95887BDA20D8FCFD00381E6B /* ViewController.swift */,
 				95887BDC20D8FCFD00381E6B /* Main.storyboard */,
+				95887C1220D90F3100381E6B /* VCRegister.swift */,
 				95887BDF20D8FD0400381E6B /* Assets.xcassets */,
 				95887BE120D8FD0400381E6B /* LaunchScreen.storyboard */,
 				95887BE420D8FD0400381E6B /* Info.plist */,
@@ -458,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95887BDB20D8FCFD00381E6B /* ViewController.swift in Sources */,
+				95887C1320D90F3100381E6B /* VCRegister.swift in Sources */,
 				95887C1120D907F900381E6B /* DataHolder.swift in Sources */,
 				95887BD920D8FCFD00381E6B /* AppDelegate.swift in Sources */,
 			);

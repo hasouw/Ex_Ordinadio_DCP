@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="92.203898050974516"/>
         </scene>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="Shc-Hl-Qeh">
             <objects>
-                <viewController id="K1V-9w-Lfc" sceneMemberID="viewController">
+                <viewController id="K1V-9w-Lfc" customClass="VCRegister" customModule="Ex_Ordinario_DCP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bJg-7Z-wVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="tCz-7q-LNN"/>
+                                    <action selector="accionBotonRegistrar" destination="K1V-9w-Lfc" eventType="touchUpInside" id="AZq-Gg-3hM"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="trregistro" id="tCz-7q-LNN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN6-c6-drl">
@@ -152,10 +153,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DGL-Mm-QfZ"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="vPP-bR-U51" id="cNH-nB-UqD"/>
+                        <outlet property="txtPass" destination="wpG-om-cip" id="1ce-Zu-6rZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2n0-Kq-dgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="952"/>
+            <point key="canvasLocation" x="118" y="1133"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="uWo-Bh-H7i">

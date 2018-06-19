@@ -9,6 +9,9 @@ import UIKit
 import Firebase
 
 class DataHolder: NSObject {
+    static let sharedInstance:DataHolder=DataHolder()
+    
+    var numeroCeldasColeccion:UInt=20;
     
     func initFireBase(){
         FIRApp.configure()

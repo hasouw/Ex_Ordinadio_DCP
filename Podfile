@@ -8,6 +8,9 @@ target 'Ex_Ordinario_DCP' do
   # Pods for Ex_Ordinario_DCP
   
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
   target 'Ex_Ordinario_DCPTests' do
     inherit! :search_paths
