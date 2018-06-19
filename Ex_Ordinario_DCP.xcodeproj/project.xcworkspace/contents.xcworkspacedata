@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/VCTab.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/LocatrionAdmin.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/VCRegister.swift">
    </FileRef>
    <FileRef

@@ -18,6 +18,9 @@
 		95887BF920D8FD0400381E6B /* Ex_Ordinario_DCPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887BF820D8FD0400381E6B /* Ex_Ordinario_DCPUITests.swift */; };
 		95887C1120D907F900381E6B /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1020D907F900381E6B /* DataHolder.swift */; };
 		95887C1320D90F3100381E6B /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1220D90F3100381E6B /* VCRegister.swift */; };
+		95887C1520D916D400381E6B /* LocatrionAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1420D916D300381E6B /* LocatrionAdmin.swift */; };
+		95887C1720D91C8D00381E6B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95887C1620D91C8D00381E6B /* MapKit.framework */; };
+		95887C1B20D91EF600381E6B /* VCTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95887C1A20D91EF600381E6B /* VCTabla.swift */; };
 		FD86BBF55227173E2F526C9C /* Pods_Ex_Ordinario_DCPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08BC9DEFF7D41371EF7591 /* Pods_Ex_Ordinario_DCPTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		95887C0920D9053200381E6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		95887C1020D907F900381E6B /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataHolder.swift; path = /Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/DataHolder.swift; sourceTree = "<absolute>"; };
 		95887C1220D90F3100381E6B /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VCRegister.swift; path = /Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/VCRegister.swift; sourceTree = "<absolute>"; };
+		95887C1420D916D300381E6B /* LocatrionAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocatrionAdmin.swift; path = /Users/daniel.chantres/Desktop/Ex_Ordinario_DCP/Ex_Ordinario_DCP/LocatrionAdmin.swift; sourceTree = "<absolute>"; };
+		95887C1620D91C8D00381E6B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		95887C1A20D91EF600381E6B /* VCTabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTabla.swift; sourceTree = "<group>"; };
 		9A6AF9A61305F8118771B76D /* Pods-Ex_Ordinario_DCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ex_Ordinario_DCP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ex_Ordinario_DCP/Pods-Ex_Ordinario_DCP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95887C1720D91C8D00381E6B /* MapKit.framework in Frameworks */,
 				6C4F78D5439C1A8DC5FB5ED0 /* Pods_Ex_Ordinario_DCP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +139,7 @@
 		95887BD720D8FCFD00381E6B /* Ex_Ordinario_DCP */ = {
 			isa = PBXGroup;
 			children = (
+				95887C1420D916D300381E6B /* LocatrionAdmin.swift */,
 				95887BD820D8FCFD00381E6B /* AppDelegate.swift */,
 				95887BDA20D8FCFD00381E6B /* ViewController.swift */,
 				95887BDC20D8FCFD00381E6B /* Main.storyboard */,
@@ -141,6 +149,7 @@
 				95887BE420D8FD0400381E6B /* Info.plist */,
 				95887C0920D9053200381E6B /* GoogleService-Info.plist */,
 				95887C1020D907F900381E6B /* DataHolder.swift */,
+				95887C1A20D91EF600381E6B /* VCTabla.swift */,
 			);
 			path = Ex_Ordinario_DCP;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 		F9B0AFB15CEBD2E808CE0465 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95887C1620D91C8D00381E6B /* MapKit.framework */,
 				2EC476AB558DF9EE677FB934 /* Pods_Ex_Ordinario_DCP.framework */,
 				1E08BC9DEFF7D41371EF7591 /* Pods_Ex_Ordinario_DCPTests.framework */,
 				3030F833F43E8F95C6E7F61B /* Pods_Ex_Ordinario_DCPUITests.framework */,
@@ -250,6 +260,11 @@
 				TargetAttributes = {
 					95887BD420D8FCFC00381E6B = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					95887BE820D8FD0400381E6B = {
 						CreatedOnToolsVersion = 9.3;
@@ -460,6 +475,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95887C1520D916D400381E6B /* LocatrionAdmin.swift in Sources */,
+				95887C1B20D91EF600381E6B /* VCTabla.swift in Sources */,
 				95887BDB20D8FCFD00381E6B /* ViewController.swift in Sources */,
 				95887C1320D90F3100381E6B /* VCRegister.swift in Sources */,
 				95887C1120D907F900381E6B /* DataHolder.swift in Sources */,
